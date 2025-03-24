@@ -1,0 +1,115 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: 'Peshang Des 2', sans-serif;
+    font-size: 33px;
+    background-color: #ef0000;
+    color: #ffffff;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden; /* Hide body scrollbar */
+}
+
+/* Container for the content */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+    height: 100%;
+    overflow-y: scroll; /* Allow scrolling in the container */
+    padding-right: 20px; /* Avoid content being hidden under scrollbar */
+}
+
+/* Heading */
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Search bar */
+.search-container {
+    text-align: center;
+    margin-bottom: 30px;  /* Add gap below the search box */
+}
+
+#citySearch {
+    padding: 15px;
+    width: 80%;
+    max-width: 600px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    transition: border 0.3s;
+}
+
+#citySearch:focus {
+    border: 1px solid #007bff;
+    outline: none;
+}
+
+/* Business card layout */
+.business-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Styling for each business card */
+.business-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.business-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Card title */
+.business-item h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Address and contact details */
+.business-item p {
+    font-size: 16px;
+    color: #ef0000;
+    margin: 5px 0;
+}
+
+/* Phone number link styling */
+.business-item a {
+    text-decoration: none;
+    color: #01a530;
+    font-weight: bold;
+}
+
+.business-item a:hover {
+    text-decoration: underline;
+}
